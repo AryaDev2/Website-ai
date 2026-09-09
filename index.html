@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fxz AI - Asisten Cerdas Modern</title>
+    <!-- Font & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Three.js untuk 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ====== 3D Canvas Background ====== -->
+    <div id="three-canvas"></div>
+
+    <!-- ====== Navbar ====== -->
+    <nav class="navbar glass">
+        <div class="logo">
+            <i class="fas fa-brain"></i>
+            <span>Fxz AI</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Docs</a>
+        </div>
+        <div class="nav-status">
+            <span class="status-dot"></span> Online
+        </div>
+    </nav>
+
+    <!-- ====== Hero ====== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-text">Fxz <span>AI</span></h1>
+            <p class="subtitle">Asisten berbasis GPT-OSS 120B</p>
+            <div class="hero-badge">
+                <i class="fas fa-bolt"></i> Real-time · 3D Immersive
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Chat Section ====== -->
+    <section class="chat-section">
+        <div class="chat-container glass">
+            <!-- Header Chat -->
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chat-title">
+                    <h3>Fxz AI Assistant</h3>
+                    <span><i class="fas fa-circle online"></i> Siap membantu</span>
+                </div>
+                <button id="clearChat" class="btn-icon" title="Hapus chat">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+
+            <!-- Messages -->
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <div class="msg-avatar"><i class="fas fa-robot"></i></div>
+                    <div class="msg-bubble">
+                        Halo! Saya Fxz AI, asisten cerdas berbasis GPT-OSS 120B. Ada yang bisa saya bantu?
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input -->
+            <div class="chat-input-area">
+                <div class="input-wrapper">
+                    <input type="text" id="chatInput" placeholder="Tanyakan apa saja..." />
+                    <button id="sendBtn" class="btn-send">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="input-tools">
+                    <button class="tool-btn"><i class="fas fa-microphone"></i></button>
+                    <button class="tool-btn"><i class="fas fa-paperclip"></i></button>
+                    <span class="char-count">0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Footer ====== -->
+    <footer>
+        <p>© 2026 Fxz AI — Built with <i class="fas fa-heart" style="color:#ff6b6b;"></i> & Three.js</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
